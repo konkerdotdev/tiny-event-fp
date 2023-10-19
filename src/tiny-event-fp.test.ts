@@ -1,6 +1,6 @@
 import * as P from '@konker.dev/effect-ts-prelude';
 
-import * as unit from './tiny-event';
+import * as unit from './tiny-event-fp';
 
 describe('TinyEvent', () => {
   const EventTypeFoo = 'Foo';
