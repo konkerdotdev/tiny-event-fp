@@ -1,10 +1,6 @@
 /* eslint-disable fp/no-unused-expression */
 import * as P from '@konker.dev/effect-ts-prelude';
 
-//[FIXME: should Effect<R, E, A> have R as a param?]
-//[FIXME: should Effect<R, E, A> have E as a param?]
-//[FIXME: change to succeed/tap?]
-
 export type TinyEventListener<T, X> = (eventType: T, eventData?: X) => P.Effect.Effect<never, Error, void>;
 
 export type TinyEventDispatcher<T, X> = {

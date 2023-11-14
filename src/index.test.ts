@@ -1,6 +1,6 @@
 import * as P from '@konker.dev/effect-ts-prelude';
 
-import * as unit from './tiny-event-fp';
+import * as unit from './index';
 
 describe('TinyEvent', () => {
   const EventTypeFoo = 'Foo';
@@ -15,7 +15,6 @@ describe('TinyEvent', () => {
 
     const prog = P.pipe(
       unit.createTinyEventDispatcher<EventType, string>(),
-      (x) => x,
       P.Effect.flatMap(unit.addListener<EventType, string>(EventTypeFoo, l1)),
       P.Effect.flatMap(unit.addListener<EventType, string>(EventTypeBar, l2)),
       P.Effect.flatMap(unit.addStarListener<EventType, string>(l3)),
@@ -33,7 +32,7 @@ describe('TinyEvent', () => {
     );
 
     const result = await P.Effect.runPromise(prog);
-    await expect(result).toHaveProperty('listeners');
+    expect(result).toHaveProperty('listeners');
     expect(l1).toHaveBeenCalledTimes(1);
     expect(l1.mock.calls[0]).toEqual([EventTypeFoo, 'Hello Foo 1']);
     expect(l2).toHaveBeenCalledTimes(3);
