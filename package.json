@@ -24,7 +24,7 @@
   "dependencies": {
     "@effect/schema": "^0.61.3",
     "@konker.dev/effect-ts-prelude": "latest",
-    "effect": "^2.2.2"
+    "effect": "2.2.5"
   },
   "devDependencies": {
     "@effect/language-service": "^0.0.21",
