@@ -6,14 +6,14 @@ settings:
 
 dependencies:
   '@effect/schema':
-    specifier: ^0.61.3
-    version: 0.61.3(effect@2.2.5)(fast-check@3.15.0)
+    specifier: ^0.63.2
+    version: 0.63.2(effect@2.4.1)(fast-check@3.15.0)
   '@konker.dev/effect-ts-prelude':
-    specifier: latest
-    version: 0.0.11(@effect/schema@0.61.3)(effect@2.2.5)
+    specifier: ^0.0.13
+    version: 0.0.13(@effect/schema@0.63.2)(effect@2.4.1)
   effect:
-    specifier: 2.2.5
-    version: 2.2.5
+    specifier: ^2.4.1
+    version: 2.4.1
 
 devDependencies:
   '@effect/language-service':
@@ -458,13 +458,13 @@ packages:
     resolution: {integrity: sha512-e8vfKbjnbYiyneBincEFS0tzXluopGK77OkVFbPRtUbNDS5tJfb+jiwOQEiqASDsadcZmd+9J9+Q6v/z7GuN2g==}
     dev: true
 
-  /@effect/schema@0.61.3(effect@2.2.5)(fast-check@3.15.0):
-    resolution: {integrity: sha512-2e6aC6e5qniRJtKXY+hBAm8azP+pJv2hmQ+AwjA4abhTMILam27lMuXUxpNLmpNghr4HdjcZAs+R6PcKPBF12A==}
+  /@effect/schema@0.63.2(effect@2.4.1)(fast-check@3.15.0):
+    resolution: {integrity: sha512-piS+6dlGmcX8sAPGXdY4T6QmBbY2YXVnYjUguXpClk6FL7lQ9u2aIDib5kjCpciawJjil2VwltmPnMj0NJKKQQ==}
     peerDependencies:
-      effect: ^2.2.2
+      effect: ^2.4.1
       fast-check: ^3.13.2
     dependencies:
-      effect: 2.2.5
+      effect: 2.4.1
       fast-check: 3.15.0
     dev: false
 
@@ -792,14 +792,14 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@konker.dev/effect-ts-prelude@0.0.11(@effect/schema@0.61.3)(effect@2.2.5):
-    resolution: {integrity: sha512-oBPHaBwButVO6VpfNFSKfDUpKoKkbnTRBYzHdu4EdJj1WKR1kGUmqHBAVdymkQbnnXx9TOJCVAoOOHg6XkABsA==}
+  /@konker.dev/effect-ts-prelude@0.0.13(@effect/schema@0.63.2)(effect@2.4.1):
+    resolution: {integrity: sha512-dZw6PAlnIB+33bETsHvxRclYchIdIvqEulCClgtzuMEN5Ktr0mJwTCpQZXs5TfwTrqC4IMEz/5pvaieVrlPfsA==}
     peerDependencies:
-      '@effect/schema': ^0.61.3
-      effect: ^2.2.2
+      '@effect/schema': ^0.63.2
+      effect: ^2.4.1
     dependencies:
-      '@effect/schema': 0.61.3(effect@2.2.5)(fast-check@3.15.0)
-      effect: 2.2.5
+      '@effect/schema': 0.63.2(effect@2.4.1)(fast-check@3.15.0)
+      effect: 2.4.1
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -2372,8 +2372,8 @@ packages:
       object.defaults: 1.1.0
     dev: true
 
-  /effect@2.2.5:
-    resolution: {integrity: sha512-F1bfJXeecK6WpZDSU1UK8C8tUr3n7AqGVL1b8HWeVlHD4192x+6yN0Eb7Qa0CASike5dsbloTfidxBZFr0IpVg==}
+  /effect@2.4.1:
+    resolution: {integrity: sha512-YsoMB/EGCohGKFyTPYqaFe2B7UCU2MM303dkoowF8DNOdks/4q/00cyhTbBUmM/0FMDoUPmUi/AJ0Aj3E7vO1A==}
     dev: false
 
   /electron-to-chromium@1.4.648:

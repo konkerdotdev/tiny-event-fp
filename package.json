@@ -22,9 +22,9 @@
   ],
   "packageManager": "pnpm@8",
   "dependencies": {
-    "@effect/schema": "^0.61.3",
-    "@konker.dev/effect-ts-prelude": "latest",
-    "effect": "2.2.5"
+    "@effect/schema": "^0.63.2",
+    "@konker.dev/effect-ts-prelude": "^0.0.13",
+    "effect": "^2.4.1"
   },
   "devDependencies": {
     "@effect/language-service": "^0.0.21",
