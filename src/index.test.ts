@@ -9,9 +9,9 @@ describe('TinyEvent', () => {
   type EventType = typeof EventTypeFoo | typeof EventTypeBar | typeof EventTypeBaz;
 
   it('should work as expected', async () => {
-    const l1 = jest.fn((_t: EventType, _d?: string) => P.Effect.unit);
-    const l2 = jest.fn((_t: EventType, _d?: string) => P.Effect.unit);
-    const l3 = jest.fn((_t: EventType, _d?: string) => P.Effect.unit);
+    const l1 = jest.fn((_t: EventType, _d?: string) => P.Effect.void);
+    const l2 = jest.fn((_t: EventType, _d?: string) => P.Effect.void);
+    const l3 = jest.fn((_t: EventType, _d?: string) => P.Effect.void);
 
     const prog = P.pipe(
       unit.createTinyEventDispatcher<EventType, string>(),
